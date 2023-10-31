@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+.header-box {
+    background-color: #FAD02C; /* Cambia el color a tu elección */
+    height: 80px; /* Ajusta la altura para hacer el cuadro un poco más pequeño */
+    width: 100%; /* Ocupar todo el ancho de la página */
+    position: absolute;
+    top: 0;
+}
+
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 200px; /* Ajusta la altura según tus necesidades */
+}
+
+
+
+img {
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen según tus necesidades */
+    margin-top: 5px; /* Ajusta el valor del margen superior según lo que desees */
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+.navbar {
+    background-color: #2E3A4E;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Estilos para los elementos de la barra de navegación */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos en la barra de navegación */
+    align-items: center;
+    margin-left: 20px;
+}
+
+/* Estilos para los enlaces de texto en la barra de navegación */
+.navbar li {
+    margin: 0 40px;
+    
+}
+
+/* Agrega el efecto hover a los enlaces de texto */
+.navbar li a {
+    text-decoration: none;
+    color: #FFF;
+    transition: transform 0.2s;
+    border-radius: 30px;
+     /* Agregamos la transición aquí */
+}
+
+/* Agrega el efecto hover a los enlaces de texto */
+.navbar li a:hover {
+    transition: 0.2s;
+    background-color: #e6f1fc;
+    padding: 5px;
+    color: #000;
+}
+
+
+
+.navbar .icon-container ion-icon {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.navbar .icon-container :hover{
+transform: translateY(-2px);
+color: #FAD02C;
+}
+
+
+
+
+
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+}
+
+

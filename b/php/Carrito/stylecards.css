@@ -1,0 +1,106 @@
+
+
+
+.cardJ{
+    position: relative;
+    width: 150px;
+    height: 200px;
+    justify-content: flex-start;
+    margin: 10px;
+    margin-top: 10px;
+}
+.cardJ .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+.cardJ .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #0000 ;
+}
+.cardJ .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cardJ .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0, 0,.4);
+    text-align: center;
+
+}
+.cardJ .back {
+    transform:perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10 px #0000;
+}
+.cardJ .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+.cardJ .back .link a{
+    color: #f3f3f3;
+}
+.cardJ .back h3{
+    font-size: 15px;
+    margin-top: -3px;
+    letter-spacing: 2px;
+}
+.cardJ .back p {
+    letter-spacing: 1px;
+    font-size: 8px;
+}
+.cardJ:hover .front{
+    transform:perspective(600px) rotateY(180deg) ;
+}
+.cardJ:hover .back{
+    transform:perspective(600px) rotateY(360deg) ;
+}
+/*-------------------------------------------------------------- */
+.icon-container i {
+    font-size: 1.6em;
+    color: #fff;
+    transition: all 0.3s ease-in-out; /* Agrega una transición suave a todos los cambios */
+}
+
+
+ion-icon {
+    font-size: 1em;
+    color: #fff; /* Cambia el color del icono según tus preferencias */
+}
+.cardJ .back .icon-container {
+    /* Establece el tamaño y otros estilos del icono aquí */
+    position: absolute;
+    bottom: 10px;
+    
+    right: 30px;
+}
+
+.cardJ .back .icon-container i {
+    cursor: pointer;
+    font-size: 1em; /* Tamaño original del icono */
+    color: #fff;
+    transition: transform 0.2s; /* Agrega una transición para un efecto suave de escala */
+    margin-top: 1;
+}
+
+.cardJ .back .icon-container:hover i {
+    transform: scale(0.8); /* Escala el icono un poco más pequeño en hover */
+}
